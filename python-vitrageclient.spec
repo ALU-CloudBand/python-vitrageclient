@@ -2,14 +2,14 @@
 
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
-Name:             python-vitrageclient
+Name:             python-%{pypi_name}
 Version:          XXX
 Release:          XXX
 Summary:          Python API and CLI for OpenStack Vitrage
 
 License:          ASL 2.0
-URL:              https://github.com/openstack/%{name}
-Source0:          https://pypi.python.org/packages/source/g/%{pypi_name}/%{pypi_name}-%{version}.tar.gz
+URL:              http://pypi.python.org/pypi/%{name}
+Source0:          http://pypi.python.org/packages/source/p/%{name}/%{name}-%{version}.tar.gz
 
 BuildArch:        noarch
 BuildRequires:    python-setuptools
@@ -73,6 +73,7 @@ rm -rf html/.doctrees html/.buildinfo
 %{_bindir}/vitrage
 %{python2_sitelib}/vitrageclient
 %{python2_sitelib}/*.egg-info
+/usr/share/vitrage.bash_completion
 
 %files doc
 %doc html
