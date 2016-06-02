@@ -47,7 +47,7 @@ This package contains auto-generated documentation.
 
 
 %prep
-%setup -q -n %{pypi_name}-%{upstream_version}
+%setup -q -n %{name}-%{upstream_version}
 
 # Remove bundled egg-info
 rm -rf vitrageclient.egg-info
@@ -71,7 +71,7 @@ rm -rf html/.doctrees html/.buildinfo
 %doc README.rst
 %license LICENSE
 %{_bindir}/vitrage
-%{python2_sitelib}/vitrageclient
+%{python2_sitelib}/python-vitrageclient
 %{python2_sitelib}/*.egg-info
 /usr/share/vitrage.bash_completion
 
