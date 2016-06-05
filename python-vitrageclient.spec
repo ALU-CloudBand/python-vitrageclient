@@ -9,7 +9,7 @@ Summary:          Python API and CLI for OpenStack Vitrage
 
 License:          ASL 2.0
 URL:              http://pypi.python.org/pypi/%{name}
-Source0:          http://pypi.python.org/packages/source/p/%{name}/%{name}-%{version}.tar.gz
+Source0:          http://tarballs.openstack.org/%{name}/%{name}-%{version}.tar.gz
 
 BuildArch:        noarch
 BuildRequires:    python-setuptools
